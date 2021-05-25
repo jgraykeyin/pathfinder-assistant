@@ -24,13 +24,18 @@ async function getValues() {
 
 async function getAC() {
     let targetAC = parseInt(document.getElementById("target-ac").value);
+    let bonus = parseInt(document.getElementById("target-bonus").value);
     let output = document.getElementById("defender-output");
 
     if (isNaN(targetAC)) {
         targetAC = 0;
     }
 
-    output.innerHTML = targetAC;
+    if (isNaN(bonus)) {
+        bonus = 0;
+    }
+
+    output.innerHTML = targetAC + bonus;
     checkAtk();
 }
 
@@ -70,10 +75,11 @@ function clearChecks(){
     document.getElementById("d20roll").value = "";
     document.getElementById("atk").value = "";
     document.getElementById("target-ac").value = "";
+    document.getElementById("target-bonus").value = "";
+
 
     document.getElementById("attacker-output").innerHTML = "0";
     document.getElementById("defender-output").innerHTML = "0";
-
 }
 
 
@@ -94,6 +100,9 @@ function main() {
 
     let target = document.getElementById("target-ac");
     target.addEventListener("keyup", getAC);
+
+    let bonus = document.getElementById("target-bonus");
+    bonus.addEventListener("keyup", getAC);
 
     let addCharacterBtn = document.getElementById("add-character-btn");
     addCharacterBtn.addEventListener("click", addNewInitiativeCharacter);

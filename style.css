@@ -21,6 +21,13 @@ input {
     width: 4rem;
 }
 
+button {
+    background-color: rgb(217, 245, 173);
+    color: black;
+    border: 1px solid grey;
+    padding: 4px 16px 4px 16px;
+}
+
 .ui-combo {
     display: flex;
     flex-direction: row;

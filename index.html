@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinder GM Helper</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <h2 class="pagename">Pathfinder 2se GM Assistant</h2>
+    </div>
+
+    <div class="main-container">
+
+        <div class="tool-container">
+            <h2>Initiative</h2>
+            
+            <div class="ui-combo">
+                <input type="text" id="character-name">
+                <button id="add-character-btn">Add</button>
+            </div>
+
+            <ol id="character-list" class="initiative">
+            </ol>
+
+            <div class="ui-combo">
+                <button id="clear-characters-btn">Clear</button>
+            </div>
+
+        </div>
+    
+    
+        <div class="tool-container">
+            <h2>AC/DC Check</h2>
+            
+            <section>
+                <div class="items">
+                    <label for="d20roll">d20</label>
+                    <input type="text" id="d20roll" name="d20roll" value="">
+                </div>
+    
+                <div class="items">+</div>
+    
+                <div class="items">
+                    <label for="atk">Stat</label>
+                    <input type="text" id="atk" name="atk" value="">
+                </div>
+    
+                <div class="items">vs</div>
+    
+                <div class="items">
+                    <label for="target-ac">Target AC</label>
+                    <input type="text" id="target-ac" name="target-ac" value="">
+                </div>
+            </section>
+
+            <section>
+                <div class="items">
+                    <button id="clear-checks-btn">Clear Inputs</button>
+                </div>
+            </section>
+    
+            <section>
+                <div id="attacker-output" class="big-item">0</div>
+                <div id="defender-output" class="big-item">0</div>
+            </section>
+    
+            <section>
+                <div class="result-title">Attacker</div>
+                <div class="result-title">Defender</div>
+            </section>
+    
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

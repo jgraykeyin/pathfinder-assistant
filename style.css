@@ -1,0 +1,84 @@
+body {
+    background-color: #151515;
+    color: rgba(255, 255, 255, 0.815);
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1605142859862-978be7eba909?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2700&q=80");
+    background-size: cover;
+}
+
+.pagename {
+    background-color: #151515;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    width: 4rem;
+}
+
+.ui-combo {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.tool-container {
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem 1rem 1rem;
+    border: 1px solid white;
+    border-radius: 0px;
+    background-color: #151515;
+}
+
+
+.initiative li {
+    font-size: 32px;
+    padding: 8px;
+    margin: 4px;
+    width: 100%;
+    background-color: rgb(242, 151, 14);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    padding: 1rem;
+}
+
+.big-item {
+    font-size: 64px;
+    font-weight: bold;
+    padding: 2rem;
+    border: 1px solid white;
+    margin: 2rem 2rem 0 2rem;
+}
+
+.result-title {
+    font-size: 32px;
+    padding: 0 1rem 1rem 1rem;
+    margin: 1rem;
+}
+
+
